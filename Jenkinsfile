@@ -9,9 +9,8 @@ sh ’ls’
 }
 post {
 always {
-archiveArtifacts artifacts: ’path/to/*.jar’,
+archiveArtifacts artifacts: ’path/to/.jar’,
 fingerprint: true
 }
 }
 }
-*
