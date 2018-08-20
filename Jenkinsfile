@@ -12,7 +12,7 @@ pipeline {
 }
   post {
   always {
-  archiveArtifacts artifacts: 'path/to/*.jar',
+  archiveArtifacts artifacts: 'path/to/*_less.github.io',
   fingerprint: true
     } 
   }
