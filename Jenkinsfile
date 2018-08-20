@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Build') {
 steps {
-sh 'ls'
+sh 'ls' 
 }
 steps {
 sh 'npm install'
@@ -22,4 +22,4 @@ fingerprint: true
 }
 }
 }
-}
+
