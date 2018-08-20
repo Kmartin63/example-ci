@@ -3,21 +3,21 @@ agent any
 stages {
 stage(’Build’) {
 steps {
-sh ’ls’
+sh 'ls'
 }
 steps {
-npm install
+sh 'npm install'
 }
 steps {
-npm install grunt-cli
+sh 'npm install grunt-cli'
 }
 steps {
-./node_modules/grunt-cli/bin/grunt
+sh './node_modules/grunt-cli/bin/grunt'
 }
 }
 post {
 always {
-archiveArtifacts artifacts: ’path/to/*._less.github.io’,
+archiveArtifacts artifacts: 'path/to/*._less.github.io',
 fingerprint: true
 }
 }
