@@ -14,6 +14,7 @@ sh 'ls'
             steps {
             sh './node_modules/grunt-cli/bin/grunt'
             }
+    }
 }
   post {
   always {
