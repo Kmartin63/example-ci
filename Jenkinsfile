@@ -17,7 +17,7 @@ sh './node_modules/grunt-cli/bin/grunt'
 }
 post {
 always {
-archiveArtifacts artifacts: 'path/to/*._less.github.io',
+archiveArtifacts artifacts: 'path/to/*.jar',
 fingerprint: true
 }
 }
