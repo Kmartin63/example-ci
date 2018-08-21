@@ -8,11 +8,14 @@ pipeline {
         sh './node_modules/grunt-cli/bin/grunt'
          
     }
-  }  
+  }
+stage ('Packaging'){
+sh 'tar cfz website.tgz _less.github.io'
+}  
 }
   post {
   always {
-  archiveArtifacts artifacts: '*_less.github.io',
+  archiveArtifacts artifacts: 'tar cfz website.tgz',
   fingerprint: true
     } 
   }
