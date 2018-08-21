@@ -17,7 +17,7 @@ sh 'tar cfz website.tgz _less.github.io'
 }
   post {
   always {
-  archiveArtifacts artifacts: 'tar cfz website.tgz',
+  archiveArtifacts artifacts: 'website.tgz',
   fingerprint: true
     } 
   }
